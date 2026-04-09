@@ -233,7 +233,6 @@ mdadm -D /dev/md0
 ![remove disk](images/remove-add.png)
 
 * состояние массива: `degraded`
-* статус: `[UUU_]`
 * 1 диск отсутствует
 * массив продолжает работать
 
