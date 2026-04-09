@@ -69,7 +69,7 @@ md0 : active raid10 sde[3] sdd[2] sdc[1] sdb[0]
       209582080 blocks super 1.2 512K chunks 2 near-copies [4/4] [UUUU]
       [>....................]  resync =  0.4% (1042944/209582080) finish=16.6min speed=208588K/sec
       
-unused devices: <none>
+unused devices: none
 Сохранение конфигурации
 ARRAY /dev/md0 metadata=1.2 UUID=4e21331e:ec5038f7:a3730d17:e50deff6
 Разметка GPT и создание разделов
@@ -252,8 +252,6 @@ sudo mdadm /dev/md0 --add /dev/sde
 
 ![rebuild](images/mdadm_rebuild.png)
 
-### Анализ
-
 * диск получает статус `spare rebuilding`
 * запускается процесс `recovery`
 * после завершения: `[UUUU]`, состояние `clean`
@@ -274,7 +272,6 @@ sudo mdadm /dev/md0 --add /dev/sde
 * Настроена GPT-разметка и файловые системы
 * Смоделирован отказ диска
 * Выполнено восстановление массива
-* Подтверждена отказоустойчивость RAID 10
 
 ---
 
