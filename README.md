@@ -228,7 +228,7 @@ mdadm -D /dev/md0
 
 ![degraded](images/mdadm-d.png)
 
-#### Удаление диска
+#### Удаление и добавление диска 
 
 ![remove disk](images/remove-add.png)
 
@@ -241,19 +241,11 @@ mdadm -D /dev/md0
 
 ## 5. Восстановление массива
 
-Добавление диска обратно:
-
-```bash
-sudo mdadm /dev/md0 --add /dev/sde
-```
-
 ### Скриншот восстановления
 
 ![rebuild](images/mdadm_rebuild.png)
 
 * диск получает статус `spare rebuilding`
-* запускается процесс `recovery`
-* после завершения: `[UUUU]`, состояние `clean`
 
 ---
 
