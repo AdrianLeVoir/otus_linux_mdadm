@@ -50,9 +50,10 @@ sudo ./mda_10.sh
 
 ![создание RAID](images/script_init.png)
 
+---
+
 <details>
 <summary>Полный вывод</summary>
-```bash
 adrianl@irida:~$ sudo ./mda_10.sh 
 чистка старых метаданных
 Создание RAID 10
@@ -154,8 +155,6 @@ mount: (hint) your fstab has been modified, but systemd still uses
 /dev/md0p3                          40G   24K   38G   1% /raid/part3
 /dev/md0p4                          40G   24K   38G   1% /raid/part4
 /dev/md0p5                          40G   24K   38G   1% /raid/part5
-```
-
 </details>
 
 ---
